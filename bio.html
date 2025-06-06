@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About jassypants.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f8e1f4 0%, #e3d0ff 100%);
+            color: #3a2c4b;
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .sidebar {
+            width: 210px;
+            background: #fff;
+            box-shadow: 2px 0 16px #e3d0ff55;
+            min-height: 100vh;
+            padding-top: 2.5rem;
+            position: fixed;
+            left: 0;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 10;
+        }
+        .sidebar a {
+            display: block;
+            color: #7a5c99;
+            text-decoration: none;
+            font-size: 1.15rem;
+            margin: 1.2rem 0;
+            padding: 0.7rem 1.2rem;
+            border-radius: 8px;
+            transition: background 0.18s, color 0.18s;
+            width: 100%;
+            text-align: center;
+        }
+        .sidebar a.active, .sidebar a:hover {
+            background: linear-gradient(90deg, #a084ca22 0%, #f4978e22 100%);
+            color: #a084ca;
+        }
+        .container {
+            max-width: 700px;
+            margin: 2.5rem auto;
+            background: rgba(255,255,255,0.97);
+            border-radius: 18px;
+            box-shadow: 0 4px 32px rgba(80, 40, 120, 0.13);
+            padding: 2.5rem 2rem;
+            margin-left: 210px;
+            width: calc(100% - 210px);
+        }
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+            color: #7a5c99;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        h2 {
+            font-size: 1.4rem;
+            margin-top: 2rem;
+        }
+        ul {
+            margin-left: 1.5rem;
+        }
+        .tos {
+            font-size: 0.95rem;
+            color: #6a5c7a;
+            margin-top: 2.5rem;
+            background: #f8f6ff;
+            border-radius: 10px;
+            padding: 1.2rem 1rem;
+        }
+        a {
+            color: #a084ca;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 800px) {
+            .sidebar { width: 100px; padding-top: 1rem; }
+            .sidebar a { font-size: 0.95rem; padding: 0.5rem 0.3rem; }
+            .container { margin-left: 100px; width: calc(100% - 100px); }
+        }
+        @media (max-width: 600px) {
+            .sidebar { display: none; }
+            .container { padding: 1.2rem 0.5rem; }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="sidebar">
+        <a href="indexjassy.html">🏠 Home</a>
+        <a href="bio.html" class="active">💇‍♀️ Bio</a>
+        <a href="styles.html">✂️ Hairstyles</a>
+        <a href="#" onclick="alert('Sign in on the Home page to book!'); return false;">📅 Sign In to Book</a>
+    </nav>
+    <div class="main-content">
+        <div class="container">
+            <h1>About jassypants.com</h1>
+            <p>
+                Welcome to jassypants.com, where elegance meets artistry! Our mission is to make every client feel like royalty, with bespoke hair services tailored to your unique style.
+            </p>
+
+            <h2>Our Team</h2>
+            <p>
+                <strong>Jasmine "Jassy" C. (Owner &amp; Master Stylist):</strong> Jassy is the creative force behind the salon, known for her infectious laughter and passion for making everyone feel fabulous. With years of experience and a flair for the dramatic, she leads the team with style and heart.
+            </p>
+            <ul>
+                <li><strong>Person:</strong> Our color wizard, specializing in bold transformations and subtle highlights.</li>
+                <li><strong>Person:</strong> Curl expert and updo specialist, always ready with a smile and a bobby pin.</li>
+                <li><strong>Person:</strong> Precision cutter and beard sculptor, bringing classic and modern looks to life.</li>
+            </ul>
+
+            <h2>What We Use</h2>
+            <ul>
+                <li>Premium, cruelty-free hair products</li>
+                <li>Eco-friendly and sustainable brands</li>
+                <li>Professional-grade styling tools</li>
+                <li>Custom color blends and nourishing treatments</li>
+            </ul>
+
+            <h2>Our Specialties</h2>
+            <ul>
+                <li>Curly, wavy, and textured hair</li>
+                <li>Creative color and balayage</li>
+                <li>Classic cuts and modern styles</li>
+                <li>Updos for special occasions</li>
+                <li>Gentle care for sensitive scalps</li>
+            </ul>
+
+            <h2>Terms of Service &amp; Copyright</h2>
+            <div class="tos">
+                <strong>Terms of Service:</strong> This website is for entertainment purposes only. All appointments are fictional and no real services are provided.<br><br>
+                <strong>Copyright:</strong> &copy; 2024 jassypants.com. All rights reserved. Images and content are used for parody and demonstration only.<br><br>
+                For more information, contact us at <a href="mailto:info@jassypants.com">info@jassypants.com</a>.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

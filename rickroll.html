@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beautiful Haircut Awaits</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f8e1f4 0%, #e3d0ff 100%);
+            color: #3a2c4b;
+            font-family: 'Playfair Display', serif;
+            display: flex;
+        }
+        .sidebar {
+            width: 210px;
+            background: #fff;
+            box-shadow: 2px 0 16px #e3d0ff55;
+            min-height: 100vh;
+            padding-top: 2.5rem;
+            position: fixed;
+            left: 0;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 10;
+        }
+        .sidebar a {
+            display: block;
+            color: #7a5c99;
+            text-decoration: none;
+            font-size: 1.15rem;
+            margin: 1.2rem 0;
+            padding: 0.7rem 1.2rem;
+            border-radius: 8px;
+            transition: background 0.18s, color 0.18s;
+            width: 100%;
+            text-align: center;
+        }
+        .sidebar a.active, .sidebar a:hover {
+            background: linear-gradient(90deg, #a084ca22 0%, #f4978e22 100%);
+            color: #a084ca;
+        }
+        .main-content {
+            margin-left: 210px;
+            width: 100%;
+        }
+        @media (max-width: 800px) {
+            .sidebar { width: 100px; padding-top: 1rem; }
+            .sidebar a { font-size: 0.95rem; padding: 0.5rem 0.3rem; }
+            .main-content { margin-left: 100px; }
+        }
+        @media (max-width: 600px) {
+            .sidebar { display: none; }
+            .main-content { margin-left: 0; }
+            .message { padding: 1.2rem 0.5rem; }
+        }
+        .message {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            text-align: center;
+            background: rgba(255,255,255,0.85);
+            padding: 1.5rem 2rem;
+            border-radius: 18px;
+            box-shadow: 0 4px 32px rgba(80, 40, 120, 0.13);
+        }
+        .video-container {
+            background: #fff;
+            padding: 1.2rem;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(80, 40, 120, 0.18);
+        }
+        @media (max-width: 700px) {
+            .message { font-size: 1.2rem; padding: 1rem; }
+            .video-container { padding: 0.3rem; }
+            iframe { width: 100vw; height: 56vw; max-width: 100%; }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="sidebar">
+        <a href="indexjassy.html">Home</a>
+        <a href="bio.html">Bio</a>
+        <a href="styles.html">✂️ Hairstyles</a>
+        <a href="#" onclick="alert('Sign in on the Home page to book!'); return false;">Sign In to Book</a>
+    </nav>
+    <div class="main-content">
+        <div class="message">
+            Check out a video of our happy customers!
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+                title="YouTube video player" frameborder="0"
+                allow="autoplay; encrypted-media; clipboard-write"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Available Hairstyles - jassypants.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f8e1f4 0%, #e3d0ff 100%);
+            color: #3a2c4b;
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .sidebar {
+            width: 210px;
+            background: #fff;
+            box-shadow: 2px 0 16px #e3d0ff55;
+            min-height: 100vh;
+            padding-top: 2.5rem;
+            position: fixed;
+            left: 0;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 10;
+        }
+        .sidebar a {
+            display: block;
+            color: #7a5c99;
+            text-decoration: none;
+            font-size: 1.15rem;
+            margin: 1.2rem 0;
+            padding: 0.7rem 1.2rem;
+            border-radius: 8px;
+            transition: background 0.18s, color 0.18s;
+            width: 100%;
+            text-align: center;
+        }
+        .sidebar a.active, .sidebar a:hover {
+            background: linear-gradient(90deg, #a084ca22 0%, #f4978e22 100%);
+            color: #a084ca;
+        }
+        .main-content {
+            margin-left: 210px;
+            width: 100%;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2.5rem auto;
+            background: rgba(255,255,255,0.97);
+            border-radius: 18px;
+            box-shadow: 0 4px 32px rgba(80, 40, 120, 0.13);
+            padding: 2.5rem 2rem;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #7a5c99;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+        }
+        .styles-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .style-card {
+            background: #f8f6ff;
+            border-radius: 14px;
+            box-shadow: 0 2px 12px #e3d0ff44;
+            width: 250px;
+            padding: 1.2rem 1rem 1.5rem 1rem;
+            text-align: center;
+            transition: transform 0.15s;
+        }
+        .style-card:hover {
+            transform: translateY(-4px) scale(1.03);
+            box-shadow: 0 6px 24px #a084ca33;
+        }
+        .style-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            object-fit: cover;
+            height: 180px;
+        }
+        .style-title {
+            font-weight: bold;
+            color: #a084ca;
+            margin-bottom: 0.5rem;
+            font-size: 1.15rem;
+        }
+        .style-desc {
+            font-size: 0.98rem;
+            color: #3a2c4b;
+        }
+        @media (max-width: 1000px) {
+            .container { max-width: 98vw; }
+            .styles-grid { gap: 1rem; }
+        }
+        @media (max-width: 800px) {
+            .sidebar { width: 100px; padding-top: 1rem; }
+            .sidebar a { font-size: 0.95rem; padding: 0.5rem 0.3rem; }
+            .main-content { margin-left: 100px; }
+            .style-card { width: 170px; padding: 0.7rem 0.3rem 1rem 0.3rem; }
+            .style-card img { height: 110px; }
+        }
+        @media (max-width: 600px) {
+            .sidebar { display: none; }
+            .main-content { margin-left: 0; }
+            .container { padding: 1.2rem 0.5rem; }
+            .styles-grid { flex-direction: column; align-items: center; }
+            .style-card { width: 90vw; }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="sidebar">
+        <a href="indexjassy.html">🏠 Home</a>
+        <a href="bio.html">💇‍♀️ Bio</a>
+        <a href="styles.html" class="active">✂️ Hairstyles</a>
+        <a href="#" onclick="alert('Sign in on the Home page to book!'); return false;">📅 Sign In to Book</a>
+    </nav>
+    <div class="main-content">
+        <div class="container">
+            <h1>Available Hairstyles</h1>
+            <div class="styles-grid">
+                <div class="style-card">
+                    <!-- Classic Bob: straight, chin-length bob -->
+                    <img src="https://www.hairdohairstyle.com/wp-content/uploads/2018/10/Classic-Bob-Haircuts-28-768x976.jpg" alt="Classic Bob">
+                    <div class="style-title">Classic Bob</div>
+                    <div class="style-desc">Timeless, chic, and easy to maintain. Perfect for a fresh, modern look.</div>
+                </div>
+                <div class="style-card">
+                    <!-- Curly Glam: natural, voluminous curls -->
+                    <img src="https://th.bing.com/th/id/OIP.DiuVX3q6de703Zk6D1U67wHaIx?r=0&rs=1&pid=ImgDetMain" alt="Curly Glam">
+                    <div class="style-title">Curly Glam</div>
+                    <div class="style-desc">Bouncy, defined curls for all hair types. Embrace your natural texture!</div>
+                </div>
+                <div class="style-card">
+                    <!-- Elegant Updo: hair styled up, formal look -->
+                    <img src="https://i.pinimg.com/originals/b8/3c/36/b83c36ed0cd164d494d46bea0de4825c.png" alt="Elegant Updo">
+                    <div class="style-title">Elegant Updo</div>
+                    <div class="style-desc">Perfect for weddings, proms, or any special occasion. Sophisticated and secure.</div>
+                </div>
+                <div class="style-card">
+                    <!-- Balayage Waves: long, wavy hair with highlights -->
+                    <img src="https://i.pinimg.com/736x/56/da/58/56da581b10746324874e89ca8b45f5c9.jpg" alt="Balayage Waves">
+                    <div class="style-title">Balayage Waves</div>
+                    <div class="style-desc">Sun-kissed highlights with soft, beachy waves for a relaxed vibe.</div>
+                </div>
+                <div class="style-card">
+                    <!-- Short & Edgy: pixie or undercut, bold style -->
+                    <img src="https://i0.wp.com/therighthairstyles.com/wp-content/uploads/2022/09/3-long-pixie-haircut-with-layers-and-bangs.jpg?resize=400,500&ssl=1" alt="Short & Edgy">
+                    <div class="style-title">Short &amp; Edgy</div>
+                    <div class="style-desc">A bold pixie cut for those who love to stand out and keep it low-maintenance.</div>
+                </div>
+                <div class="style-card">
+                    <!-- Long Layers: long hair with visible layers -->
+                    <img src="https://i1.wp.com/www.hadviser.com/wp-content/uploads/2019/01/38-long-layered-hairstyle-BiCoUxFALnb.jpg?resize=997%2C1190&ssl=1" alt="Long Layers">
+                    <div class="style-title">Long Layers</div>
+                    <div class="style-desc">Soft, flowing layers add movement and volume to long hair.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
